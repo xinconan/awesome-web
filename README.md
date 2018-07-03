@@ -1,6 +1,7 @@
 # awesome-web
+[![licensebuttons by](https://licensebuttons.net/l/by/3.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  
-web常见知识（问题）整理，可以作为日常自测使用，提供的答案和文章仅供学习和参考，不能作为权威解释。对于有问题的，欢迎指正。
+web常见知识（问题）整理，可以作为日常自测使用，提供的答案和文章仅供学习和参考，不作为权威解释。对于有问题的，欢迎指正。
 > 部分涉及的文章和链接版权归原作者所有，如有侵权，请联系删除。
 
 ## JS
