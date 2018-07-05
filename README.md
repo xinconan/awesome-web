@@ -18,8 +18,23 @@ web常见知识（问题）整理，可以作为日常自测使用，提供的�
 - ES6+ 用过哪些
 - Promise
 - async/ await
-- ajax如何上传文件
-- 前端如何压缩图片
+
+
+- ajax如何上传文件  
+主要是使用 `FormData()`方法。  
+具体可参考：[通过Ajax方式上传文件(input file)，使用FormData进行Ajax请求](https://www.cnblogs.com/LoveTX/p/7081515.html)
+
+- 前端如何压缩图片  
+核心使用 `canvas`的`drawImage()`方法实现
+```javascript
+var canvas = document.createElement('canvas');
+var context = canvas.getContext('2d');
+canvas.width = 400;
+canvas.height = 300;
+// 核心JS就这个
+context.drawImage(img,0,0,400,300);
+```
+具体可参考：[HTML5 file API加canvas实现图片前端JS压缩并上传](https://www.zhangxinxu.com/wordpress/2017/07/html5-canvas-image-compress-upload/)
 
 
 ### React
