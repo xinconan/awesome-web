@@ -5,6 +5,17 @@ web常见知识（问题）整理，可以作为日常自测使用，提供的�
 > 部分涉及的文章和链接版权归原作者所有，如有侵权，请联系删除。
 
 ## JS
+- js的基本类型  
+JavaScript 内置了7种类型：null, undefined , boolean, number, string, object以及 symbol (ES6).
+```js
+typeof 0              // number
+typeof true           // boolean
+typeof 'Hello'        // string
+typeof Math           // object
+typeof null           // object  !!
+typeof Symbol('Hi')   // symbol (New ES6) 
+```
+
 - 闭包和闭包用途  
 **闭包**是指有权访问另一个函数作用域中的变量的函数。
 > 注意闭包和匿名函数的区别。
@@ -52,7 +63,7 @@ context.drawImage(img,0,0,400,300);
 ```
 （1）有两种： IE 盒子模型、W3C（标准）盒子模型；
 （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；
-（3）区  别： IE的content部分把 border 和 padding计算了进去（`box-sizing: border-box`）, W3C 是 `content-box`;
+（3）区  别： IE的content部分把 border 和 padding计算了进去（box-sizing: border-box）, W3C 是 content-box;
 ```
 
 - position 有哪些值？都有哪些作用
