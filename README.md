@@ -48,10 +48,28 @@ context.drawImage(img,0,0,400,300);
 ### Angular
 
 ## CSS
-- 盒模型
-- position 有哪些值？都有哪些作用
+- 盒模型  
+```
+（1）有两种： IE 盒子模型、W3C（标准）盒子模型；
+（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；
+（3）区  别： IE的content部分把 border 和 padding计算了进去（`box-sizing: border-box`）, W3C 是 `content-box`;
+```
 
-- 清除浮动的方法
+- position 有哪些值？都有哪些作用
+```
+absolute
+生成绝对定位的元素，相对于值不为 static的第一个父元素进行定位。
+fixed （老IE不支持）
+生成绝对定位的元素，相对于浏览器窗口进行定位。
+relative
+生成相对定位的元素，相对于其正常位置进行定位。
+static
+默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right z-index 声明）。
+inherit
+规定从父元素继承 position 属性的值。
+```
+- 清除浮动的方法  
+清除浮动是为了清除使用浮动元素产生的影响。浮动的元素，高度会塌陷，而高度的塌陷使我们页面后面的布局不能正常显示。
 ```css
 #container::after{
   content:"";
@@ -70,9 +88,16 @@ context.drawImage(img,0,0,400,300);
 
 ## HTTP
 - post 和 get 区别？还有哪些其他的请求方法？
+
+
 - HTTP与 HTTPS 的区别？
-
-
+```
+1、https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。
+2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。
+3、http和https使用的是完全不同的连接方式，默认端口也不一样，前者是80，后者是443。
+4、http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。
+```
+参考：https://www.cnblogs.com/wqhwe/p/5407468.html
 
 ## 综合性
 - 在浏览器输入一个URL，会发生什么？
