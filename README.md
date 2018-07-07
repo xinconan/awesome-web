@@ -52,6 +52,22 @@ context.drawImage(img,0,0,400,300);
 - React的生命周期
 > 16.3 新的生命周期和之前的生命周期不同点
 
+```
+去掉了3个方法:
+componentWillMount
+componentWillReceiveProps
+componentWillUpdate
+增加了2个方法:
+static getDerivedStateFromProps(nextProps, prevState)
+getSnapshotBeforeUpdate(prevProps, prevState)
+更改了1个方法，增加了第3个参数:
+componentDidUpdate(prevProps, prevState, snapshot)
+```
+
+参考：  
+[图解ES6中的React生命周期](https://juejin.im/post/5a062fb551882535cd4a4ce3)  
+[React V16.3生命周期](https://segmentfault.com/a/1190000014637616)
+
 
 ### Vue
 
