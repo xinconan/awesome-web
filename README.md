@@ -26,6 +26,19 @@ typeof Symbol('Hi')   // symbol (New ES6)
 - 原型链
 - 作用域链，结合this说明
 - call 和 apply 的区别
+
+- Debounce & Throttle（去抖和节流）
+```
+debounce：将触发频繁的事件合并成一次执行。debounce适用于诸如input事件，当用户输入时需要响应ajax请求，多次input只响应一次回调方法
+throttle： 设置一个阀值，在阀值内，将触发的事件合并成一次执行；且当到达阀值，必定执行一次事件。throttle适用于resize或者鼠标移动事件，防止浏览器频繁响应事件，严重拉低性能
+
+原文: http://ghmagical.com/article/page/id/4qrB9JeihTKD © ghmagical.com
+
+```
+参考：  
+[Debounce vs Throttle](https://segmentfault.com/a/1190000010205669)  
+[函数去抖(debounce)与函数节流(throttle)](https://juejin.im/post/5ada1b9f518825673b61946d)  
+
 - ES6+ 用过哪些
 - Promise
 - async/ await
@@ -123,6 +136,7 @@ inherit
 2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。
 3、http和https使用的是完全不同的连接方式，默认端口也不一样，前者是80，后者是443。
 4、http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。
+5、HTTPS可以有效的防止运营商劫持，解决了防劫持的一个大问题。
 ```
 参考：https://www.cnblogs.com/wqhwe/p/5407468.html
 
