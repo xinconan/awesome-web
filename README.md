@@ -48,6 +48,15 @@ throttle： 设置一个阀值，在阀值内，将触发的事件合并成一�
 主要是使用 `FormData()`方法。  
 具体可参考：[通过Ajax方式上传文件(input file)，使用FormData进行Ajax请求](https://www.cnblogs.com/LoveTX/p/7081515.html)
 
+- fetch 与 ajax 的区别  
+ajax 是使用 `XMLHttpRequest` 对象来请求数据。  
+fetch是 window的一个方法，基于 Promise来处理结果/回调。  
+fetch返回的promise不会拒绝HTTP错误状态（404,500），仅在网络故障或任何阻止请求完成时，才会拒绝。  
+
+参考： 
+[ajax](http://www.runoob.com/ajax/ajax-xmlhttprequest-send.html)  
+[fetch和ajax比较](https://www.cnblogs.com/September-9/p/7099975.html)
+
 - 前端如何压缩图片  
 核心使用 `canvas`的`drawImage()`方法实现
 ```javascript
@@ -117,6 +126,10 @@ inherit
   clear:both;
 }
 ```
+
+- css层级规则
+
+- px、rem、em区别
 
 ## HTML
 - H5有哪些新特性？
