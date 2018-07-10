@@ -57,6 +57,11 @@ fetch返回的promise不会拒绝HTTP错误状态（404,500），仅在网络故
 [ajax](http://www.runoob.com/ajax/ajax-xmlhttprequest-send.html)  
 [fetch和ajax比较](https://www.cnblogs.com/September-9/p/7099975.html)
 
+- ajax 是否可以设置请求头  
+可以通过 `setRequestHeader`设置请求头，但不是什么都可以设置的。
+具体参考：[ajax中的setRequestHeader设置请求头](https://www.cnblogs.com/cdwp8/p/5157377.html)
+
+
 - 前端如何压缩图片  
 核心使用 `canvas`的`drawImage()`方法实现
 ```javascript
