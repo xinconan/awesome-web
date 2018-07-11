@@ -39,6 +39,10 @@ throttle： 设置一个阀值，在阀值内，将触发的事件合并成一�
 [Debounce vs Throttle](https://segmentfault.com/a/1190000010205669)  
 [函数去抖(debounce)与函数节流(throttle)](https://juejin.im/post/5ada1b9f518825673b61946d)  
 
+
+- 一些常用方法的polyfill  
+要熟悉一些基础方法的使用和实现方式，如：[Array.prototype.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
 - ES6+ 用过哪些
 - Promise
 - async/ await
