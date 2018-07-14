@@ -79,6 +79,9 @@ context.drawImage(img,0,0,400,300);
 具体可参考：[HTML5 file API加canvas实现图片前端JS压缩并上传](https://www.zhangxinxu.com/wordpress/2017/07/html5-canvas-image-compress-upload/)
 
 
+- 移动端300毫秒延迟/点击穿透的问题解决方法  
+社区上的解决办法是使用 FastClick 库，所以最好能够了解下其实现原理。
+
 ### React
 - React的生命周期
 > 16.3 新的生命周期和之前的生命周期不同点
