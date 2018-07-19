@@ -66,6 +66,12 @@ fetch返回的promise不会拒绝HTTP错误状态（404,500），仅在网络故
 具体参考：[ajax中的setRequestHeader设置请求头](https://www.cnblogs.com/cdwp8/p/5157377.html)
 
 
+- h5如何实现视频多倍播放  
+```js
+video.playbackRate = 2.0; // 主要是这一行代码
+```
+参考： [揭秘视频网站video视频倍速播放的实现](https://www.zhangxinxu.com/wordpress/2018/07/html5-video-double-speed-play/)
+
 - 前端如何压缩图片  
 核心使用 `canvas`的`drawImage()`方法实现
 ```javascript
