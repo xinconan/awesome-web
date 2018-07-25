@@ -86,7 +86,14 @@ context.drawImage(img,0,0,400,300);
 
 
 - 移动端300毫秒延迟/点击穿透的问题解决方法  
-社区上的解决办法是使用 FastClick 库，所以最好能够了解下其实现原理。
+> 常见的解决办法是使用 FastClick 库，所以最好能够了解下其实现原理。  
+下面的CSS声明可以用来避免浏览器300ms延时问题。
+```css
+html {
+    touch-action: manipulation;
+}
+```
+touch-action的属性可以参考：https://www.zhangxinxu.com/wordpress/2018/07/chrome-safari-touchmove-preventdefault-treated-as-passive/
 
 ### React
 - React的生命周期
