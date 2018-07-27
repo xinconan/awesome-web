@@ -95,6 +95,15 @@ html {
 ```
 touch-action的属性可以参考：https://www.zhangxinxu.com/wordpress/2018/07/chrome-safari-touchmove-preventdefault-treated-as-passive/
 
+
+- CMD、UMD和AMD
+AMD：Asynchronous Module Definition，异步模块定义。requireJS就是AMD的实现。  
+commonJS: Nodejs使用的规范。一个js文件就是一个模块。  
+CMD：seajs推广而来的。  
+UMD: Universal Module Definition，通用模块定义，用来表示模块定义的方式。当一个文件需要兼容不同的加载规范的时候，就可以使用UMD的方式定义。它兼容AMD和CommonJS规范，和浏览器全局变量形式。
+
+参考：https://blog.csdn.net/Real_Bird/article/details/54869066
+
 ### React
 - React的生命周期
 > 16.3 新的生命周期和之前的生命周期不同点
