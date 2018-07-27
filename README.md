@@ -129,6 +129,20 @@ componentDidUpdate(prevProps, prevState, snapshot)
 （3）区  别： IE的content部分把 border 和 padding计算了进去（box-sizing: border-box）, W3C 是 content-box;
 ```
 
+- css优先级  
+选择器**特指度** 用来度量css选择器识别元素的精确性。用(a, b, c, d)标识特指度。
+> 用style属性应用样式，a =1,否则 a=0;  
+> b 为ID选择器的数量；  
+> c 为类选择器、属性选择器和伪类的数量  
+> d 为类型选择器和伪元素的数量
+比较特指度时，左侧的选择器特指度最高。(1,0,0,0)高于(0,1,1,3)，(0,1,1,3)高于(0,1,1,1)
+
+如果一个元素的样式对应的两个特指度相同，那么在样式表中靠声明的属性优先级较高。  
+行内style优先级高于特指度  
+!important 优先级更高，如果有多个!important，最后声明的优先级高。  
+
+参考：《css: 样式表性能调优》 第2章 级联
+
 - position 有哪些值？都有哪些作用
 ```
 absolute
