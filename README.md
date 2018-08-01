@@ -25,7 +25,32 @@ typeof Symbol('Hi')   // symbol (New ES6)
 
 - 原型链
 - 作用域链，结合this说明
-- call 和 apply 的区别
+
+
+- 改变this指向的方法  
+> 1. call()
+> 2. apply()
+> 3. 使用箭头函数
+> 4. bind()
+
+思考：with 语句用于设置代码在特定对象中的作用域，那么with是否能改变this指向？
+```js
+var sMessage = "hello";
+with(sMessage) {
+  console.log(this) // this  ---> window
+  alert(toUpperCase());	//输出 "HELLO"
+}
+```
+是不可以的。
+
+
+- call 和 apply 的区别  
+都能改变this指向，区别是参数不同。  
+```js
+call(obj, arg1, arg2);
+// apply 接收的第二个参数是数组
+apply(obj, [arg1, arg2])
+```
 
 - Debounce & Throttle（去抖和节流）
 ```
