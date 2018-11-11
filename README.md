@@ -68,11 +68,6 @@ throttle： 设置一个阀值，在阀值内，将触发的事件合并成一�
 - 一些常用方法的polyfill  
 要熟悉一些基础方法的使用和实现方式，如：[Array.prototype.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
-- ES6+ 用过哪些
-- Promise
-- async/ await
-
-
 - ajax如何上传文件  
 主要是使用 `FormData()`方法。  
 具体可参考：[通过Ajax方式上传文件(input file)，使用FormData进行Ajax请求](https://www.cnblogs.com/LoveTX/p/7081515.html)
@@ -128,6 +123,32 @@ CMD：seajs推广而来的。
 UMD: Universal Module Definition，通用模块定义，用来表示模块定义的方式。当一个文件需要兼容不同的加载规范的时候，就可以使用UMD的方式定义。它兼容AMD和CommonJS规范，和浏览器全局变量形式。
 
 参考：https://blog.csdn.net/Real_Bird/article/details/54869066
+
+### ES6
+- ES6+ 常用的语法特性
+- Promise
+- async/ await
+- ES6 Module import & export  
+```js
+// a.js
+export const name = 'xinconan';
+export const fn = function() {
+  return something;
+};
+// b.js
+import {name, fn} from 'a.js';
+```
+上面的`a.js`还可以这样写：
+```js
+const name = 'xinconan';
+const fn = function() {
+  return something;
+};
+// as 可以使用新的别名，这样在import中需要使用fn2而不是fn了，import同理
+export {name, fn as fn2};
+```
+更多参考：http://es6.ruanyifeng.com/#docs/module  
+
 
 ### React
 - React的生命周期
